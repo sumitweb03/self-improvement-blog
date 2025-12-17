@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Practical self improvement guide with inspiring quotes. Learn how to avoid negative people, improve communication skills, and journal your thoughts for success.">
+    <meta name="keywords" content="Self Improvement, Avoid Negative People, Communication Skills, Journaling, Motivation Quotes, Success Habits, Personal Growth">
+    <meta name="author" content="Sumit Tatawat">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Self Improvement Blog | Mindset Blog">
+    <meta property="og:description" content="Explore tips, habits, and strategies for continuous self-improvement and a better lifestyle.">
+    <meta property="og:image" content="https://sumittatawat.github.io/self-improvement-blog/images/self-improvement-word-cloud-hand-writing-concept.jpg">
+    <meta property="og:url" content="https://sumittatawat.github.io/self-improvement-blog/self-improvement.html">
+    <link rel="canonical" href="https://sumittatawat.github.io/self-improvement-blog/self-improvement.html">
+
+
+<title>Top 10 Powerful Self-Improvement Tips for Daily Success</title>
+<style>
+  /* -------------------- RESET -------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* -------------------- NAVBAR -------------------- */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(90deg, #4b6cb7, #182848);
+  animation: slideDown 0.7s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+/* LOGO */
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/* NAV LINKS */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.nav-links li a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  padding: 5px 0;
+}
+
+/* Underline Hover Effect */
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: #ffcc00;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.nav-links li a:hover {
+  color: #ffcc00;
+  letter-spacing: 0.5px;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+.nav-links.show{
+  display: flex;
+}
+/* Dropdown main menu */
+.dropdown-menu {
+  background: #182848;
+  padding: 10px 0;
+  width: 280px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  display: none;
+  position: absolute;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: none !important;
+}
+
+/* Sub-category button */
+.sub-toggle {
+  width: 100%;
+  background: none;
+  border: none;
+  color: white;
+  font: inherit;
+  text-align: left;
+  padding: 12px 18px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.sub-toggle:hover {
+  background: #4b6cb7;
+  color: #ffcc00;
+}
+
+/* Sub-list (hidden by default) */
+.sub-list {
+  display: none;
+  background: #0f1a35;
+  max-width: 250px;
+  overflow-y: auto;
+}
+
+.sub-list li a {
+  display: block;
+  padding: 10px 25px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.90rem;
+  transition: 0.3s;
+}
+
+.sub-list li a:hover {
+  background: #4b6cb7;
+  color: #ffcc00;
+}
+.sub-dropdown.open .sub-list {
+  display: block;
+}
+/* Blog Dropdown */
+.navbar .dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 8px 12px;
+  font-weight: 500;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #23395d;
+  padding: 10px 0;
+  list-style: none;
+  min-width: 260px;
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 8px;
+  display: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 18px;
+  color: #fff;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.dropdown-menu li a:hover {
+  background: #314e78;
+}
+
+/* Show/Hide */
+.dropdown.open .dropdown-menu {
+  display: block !important;
+}
+ /* Hamburger */
+ .hamburger { 
+  
+  flex-direction: column; 
+  cursor: pointer; 
+  gap: 5px; 
+}
+.hamburger span { 
+  width: 25px; 
+  height: 3px; 
+  background: #fff; 
+  border-radius: 2px; 
+  transition: 0.3s; 
+}
+
+/* SLIDE-DOWN ANIMATION */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* -------------------- HEADER / CONTAINER -------------------- */
+.container {
+  max-width: 850px;
+  margin: 40px auto;
+  background: #fff;
+  border: 2px solid #27ae60;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  animation: fadeUp 0.8s ease;
+}
+
+.container h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+
+.container p {
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+.header-img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 20px 0;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.header-img:hover {
+  transform: scale(1.02);
+}
+
+/* -------------------- TIPS -------------------- */
+.tip {
+  max-width: 90%;
+  margin: 30px auto;
+  background: #fff;
+  padding: 25px;
+  border-left: 6px solid #27ae60;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  animation: fadeUp 1s ease;
+  transition: transform 0.3s ease;
+}
+
+.tip:hover {
+  transform: translateY(-5px);
+}
+
+.tip h2 {
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.tip p {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #444;
+  text-align: justify;
+}
+
+.quote {
+  margin-top: 15px;
+  font-style: italic;
+  background: #ecf0f1;
+  border-left: 4px solid #27ae60;
+  padding: 12px 16px;
+  border-radius: 6px;
+  color: #2c3e50;
+}
+
+/* -------------------- MAIN SECTION -------------------- */
+.main {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  animation: fadeUp 1.2s ease;
+}
+
+.main h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: #2c3e50;
+}
+
+.main p {
+  font-size: 16px;
+  color: #444;
+}
+
+/* -------------------- FOOTER -------------------- */
+footer {
+  background: linear-gradient(90deg, #4b6cb7, #182848);
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  color: #f5f7f8;
+}
+
+footer p {
+  margin: 6px 0;
+  color: #e8f0ff;
+}
+
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #00e1ff;
+}
+
+/* -------------------- ANIMATIONS -------------------- */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* -------------------- MEDIA QUERIES -------------------- */
+@media (max-width: 1024px) {
+      .nav-links { gap: 25px; }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; flex-direction: column; width: 100%; background: #182848; padding: 15px 0; border-radius: 8px; }
+      .nav-links li { width: 100%; text-align: center; }
+      .nav-links li a { padding: 10px 0; display: block; }
+      .hamburger { display: flex; }
+    }
+
+    @media (max-width: 480px) {
+      .container, .tip, .main { padding: 16px; margin: 20px; }
+      .container h1 { font-size: 24px; }
+      body { font-size: 14px; }
+    }
+
+/* Like + Share */
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  position: relative;
+}
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.like-btn {
+  background: linear-gradient(90deg, #182848, #4b6cb7);
+  color: #fff;
+  transition: transform 0.6s ease;
+}
+.like-btn:hover { background: linear-gradient(45deg, hotpink, red);}
+.share-btn {
+  background: linear-gradient(90deg, #182848, #4b6cb7);
+  color: #fff;
+  position: relative;
+  transition: transform 0.6s ease;
+}
+.share-btn:hover { background: linear-gradient(45deg, #1E90FF, #4169E1);}
+/* Share Popup */
+.share-popup {
+  display: none;
+  position: absolute;
+  top: 40px;
+  gap: 10px;
+  background: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
+.share-popup a { text-decoration: none; }
+.share-popup a:hover { transform: scale(1.2); }
+.whatsapp { color: #25D366; }
+.facebook { color: #1877F2; }
+.twitter { color: #1DA1F2; }
+.linkedin { color: #0077B5; }
+
+/* Comments */
+.comment-section {
+  width: 50%;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #f9f9f9;
+  text-align: center;
+}
+.comment-section h3{
+  margin-bottom: 20px;
+}
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: none;
+  margin-bottom: 10px;
+}
+.comment {
+  background: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.comment-actions {
+  margin-top: 8px;
+  display: flex;
+  gap: 10px;
+}
+.comment-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+.comment-actions button:hover { color: blue; }
+.reply-box { margin-top: 10px; margin-left: 20px; }
+
+</style>
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+    <div class="logo">Self Improvement</div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <!-- Categories dropdown -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle">Categories ▾</a>
+            
+              <ul class="dropdown-menu">
+            
+                <!-- Daily Life -->
+                <li class="sub-dropdown">
+                  <button type="button" class="sub-toggle">Daily Life Improvement ▾</button>
+                  <ul class="sub-list">
+                    <li><a href="coming-soon.html">Simple Lifestyle Changes</a></li>
+                    <li><a href="coming-soon.html">Daily Challenges to Push Yourself Forward</a></li>
+                    <li><a href="coming-soon.html">Daily Affirmations for Confidence</a></li>
+                    <li><a href="coming-soon.html">Importance of Meditation in Daily Life</a></li>
+                  </ul>
+                </li>
+            
+                <!-- Mindset -->
+                <li class="sub-dropdown">
+                  <button type="button" class="sub-toggle">Mindset & Motivation ▾</button>
+                  <ul class="sub-list">
+                    <li><a href="coming-soon.html">How to Deal With Failure Positively</a></li>
+                    <li><a href="coming-soon.html">How to Build Positive Thinking Habit</a></li>
+                    <li><a href="coming-soon.html">Why Journaling is Good for Mental Clarity</a></li>
+                  </ul>
+                </li>
+            
+                <!-- Habits -->
+                <li class="sub-dropdown">
+                  <button type="button" class="sub-toggle">Habits & Discipline ▾</button>
+                  <ul class="sub-list">
+                    <li><a href="coming-soon.html">How to Build Self Discipline</a></li>
+                    <li><a href="coming-soon.html">Best Habits to Change Your Life</a></li>
+                    <li><a href="coming-soon.html">How to Overcome Laziness</a></li>
+                    <li><a href="coming-soon.html">How to Stop Procrastinating</a></li>
+                  </ul>
+                </li>
+            
+                <!-- Productivity -->
+                <li class="sub-dropdown">
+                  <button type="button" class="sub-toggle">Productivity & Time Management ▾</button>
+                  <ul class="sub-list">
+                    <li><a href="coming-soon.html">Morning Routine for Success</a></li>
+                    <li><a href="coming-soon.html">Time Management Tips</a></li>
+                    <li><a href="coming-soon.html">How to Set SMART Goals</a></li>
+                  </ul>
+                </li>
+            
+                <!-- Books -->
+                <li class="sub-dropdown">
+                  <button type="button" class="sub-toggle">Books & Learning ▾</button>
+                  <ul class="sub-list">
+                    <li><a href="coming-soon.html">5 Books That Changed My Thinking</a></li>
+                  </ul>
+                </li>
+            
+              </ul>
+            </li>
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle">Blogs ▾</a>
+            
+              <ul class="dropdown-menu">
+                <li><a href="coming-soon.html">Morning Routine for Success</a></li>
+                <li><a href="coming-soon.html">How to Overcome Laziness</a></li>
+                <li><a href="coming-soon.html">Best Habits to Change Your Life</a></li>
+                <li><a href="coming-soon.html">5 Books That Changed My Thinking</a></li>
+                <li><a href="coming-soon.html">How to Build Self Discipline</a></li>
+                <li><a href="coming-soon.html">Importance of Meditation in Daily Life</a></li>
+                <li><a href="coming-soon.html">Time Management Tips for Students and Professionals</a></li>
+                <li><a href="coming-soon.html">How to Set and Achieve SMART Goals</a></li>
+                <li><a href="coming-soon.html">How to Deal With Failure Positively</a></li>
+                <li><a href="coming-soon.html">Daily Affirmations for Confidence</a></li>
+                <li><a href="coming-soon.html">How to Stop Procrastinating</a></li>
+                <li><a href="coming-soon.html">Simple Lifestyle Changes for a Better You</a></li>
+                <li><a href="coming-soon.html">Why Journaling is Good for Mental Clarity</a></li>
+                <li><a href="coming-soon.html">How to Build Positive Thinking Habit</a></li>
+                <li><a href="coming-soon.html">Daily Challenges to Push Yourself Forward</a></li>           
+              </ul>
+            </li>
+            
+            <li><a href="about.html">About</a></li>
+            <li><a href="contactform.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+    <div class="container">
+        
+        <h1>Top 10 Self Improvement Tips to Change Your Life</h1>
+        <p><strong>Introduction:</strong> Self improvement is the key to success, happiness. and confidence.
+        Today we will discuss 10 tips to improve your life. Which can change your life.</p>
+        <img src="images/self-improvement-word-cloud-hand-writing-concept.jpg" class="header-img" alt="Self improvement word cloud" loading="lazy">
+    </div>
+    <div class="tip">
+     <h2>1. Wake Up Early</h2>
+     <p>Early morning in the most powerful time.An effective habit that can improve almost every area of life is rising early.  
+        A quiet and pleasant atmosphere helps early risers concentrate better and have a more tranquil start to the day.  
+        Planning, introspection, and goal-setting are made easier in the morning when there are less outside distractions.  
+        According to studies, rising early is associated with better sleep, greater productivity, and better mental health.  
+        It also makes time for good habits like working exercise, eating a balanced meal, or practicing mindfulness.  
+        Consistently rising early, albeit initially difficult, fosters discipline and establishes a solid basis for both 
+        professional and personal success. </p>
+        <div class="quote">Tip: Start getting up between 4 and 5 a.m. every day. </div>    
+    </div>
+    <div class="tip">
+        <h2>2. Read Daily</h2>
+        <p>Reading first thing in the morning is a straightforward routine that can result in significant personal development. 
+           Reading, whether it be a few pages of a book, an inspirational article, or the morning news, helps focus, alert your 
+           brain, and create a positive attitude for the remainder of the day. Reading in the morning gives you the opportunity 
+           to increase your creativity, broaden your knowledge, and feed your mind new ideas while your mind is at its most alert. 
+           It also promotes a peaceful and purposeful morning—away from devices, stress, and distractions. This practice gradually 
+           enhances your language and cognitive abilities while also promoting emotional equilibrium and mental clarity.Reading for 
+           just 15 to 20 minutes each morning can motivate, enlighten, and inspire you for the day.</p>
+           <div class="quote">Recommended: "Atomic Habits", "Think and Grow Rich" Today a reader, tomorrow a leader.</div>
+    </div>
+    <div class="tip">
+        <h2>3. Set Daily Goals</h2>
+        <p>One of the most effective ways to give your day structure, direction, and clarity is to set daily goals. Having specific, 
+            attainable goals keeps you focused and productive rather than allowing the hours to pass you by. Setting daily goals 
+            helps you stay on track, whether it be learning something new, doing a chore, or just being conscious. By providing 
+            you with a clear action plan, they help you overcome overload and break down larger goals into smaller, more achievable 
+            tasks. Putting your objectives in writing every morning or the evening before can also increase accountability and motivation. 
+            In addition to getting more done, setting daily goals helps you develop discipline, confidence, and momentum for long-term 
+            success.</p>
+            <div class="quote">"Without objectives, you become aimless."</div>
+    </div>
+    <div class="tip">
+        <h2>4. Avoid Negative People</h2>
+        <p>Growing as a person depends on surrounding oneself with positive people, which frequently entails avoiding unpleasant people. 
+            Sometimes without even realizing it, negative people have a way of draining your energy, discouraging your goals, and sowing 
+            doubt or dread. Continuous exposure to their grievances, criticism, or poisonous attitude might affect your own motivation, 
+            attitude, and thinking. Setting healthy boundaries and removing yourself from those who bring negativity into your life are 
+            crucial for maintaining mental toughness and goal concentration. Instead, surround yourself with individuals who positively 
+            challenge, inspire, and uplift you. Keeping your peace is not selfish; rather, it is essential to leading a well-rounded, 
+            independent, and satisfying life.</p>
+           <div class="quote">"Avoid being with negative individuals. They have an issue for every solution."</div> 
+    </div>
+    <div class="tip">
+        <h2>5. Improve Communication Skills</h2>
+        <p>One important ability that can greatly enhance both your personal and professional life is effective communication. 
+            You may avoid misunderstandings, strengthen relationships, and become more confident in social situations when you 
+            listen intently and communicate your ideas clearly. Concentrate on body language, empathy, and clarity to enhance your 
+            communication abilities. Make eye contact, practice speaking with intention, and be receptive to criticism. Increasing 
+            your vocabulary, reading frequently, and having meaningful discussions all aid in improving your ability to communicate 
+            yourself. Strong communication abilities open doors and make your voice heard, whether you're presenting ideas, leading 
+            a team, or forming new friendships. Once mastered, it's a skill that lasts a lifetime.</p>
+            <div class="quote">"The bridge between confusion and clarity is good communication."</div>
+            
+    </div>
+    <div class="tip">
+        <h2>6. Learn New Skills</h2>
+        <p>One of the best ways to develop, adapt, and maintain competitiveness in a world that is constantly changing is to learn 
+           new skills. Every new talent you learn improves your life, whether it's a personal one like cooking, painting, or playing 
+           an instrument, or a professional one like coding, writing, or digital marketing. It keeps your mind sharp and inquisitive, 
+           increases your chances, and boosts your confidence. With online classes, tutorials, and forums at your fingertips, learning 
+           is now easier than ever in the current digital era. You invest in your future and create countless opportunities when you 
+           make the commitment to learn something new. Keep in mind that the instant you leave your comfort zone, you start to grow.
+          </p>
+          <div class="quote">"You develop more the more you learn."</div>
+    </div>
+    <div class="tip">
+        <h2>7. Exercise Daily</h2>
+        <p>One of the easiest and most efficient ways to enhance your physical and emotional well-being is to exercise every day. 
+            Frequent exercise promotes cardiovascular health, develops muscles, and enhances the immune system. In addition to the 
+            physical advantages, exercise releases endorphins, or "feel-good" hormones, which lessen melancholy, anxiety, and stress. 
+            A quick workout of 20 to 30 minutes can boost your energy levels and improve your ability to concentrate throughout the day. 
+            Making regular exercise a habit doesn't need you to go to the gym; yoga, cycling, or walking can all be equally beneficial. 
+            You can invest in a better, healthier life by moving your body on a daily basis. Consistency is essential.</p>
+            <div class="quote">"A healthy mind is supported by a healthy body."</div>
+    </div>
+    <div class="tip">
+        <h2>8. Control Screen Time</h2>
+        <p>That screens play a significant role in our everyday lives in the current digital era, too much screen time can be detrimental 
+            to our physical and mental health. Long-term use of phones, computers, or televisions can cause eye strain, bad posture, sleep 
+            issues, and a shorter attention span. Relationships may suffer, and time for practical pursuits like reading, working out, or 
+            spending time with loved ones may be reduced. We may restore balance in our lives by establishing screen time restrictions, 
+            taking frequent pauses, and using technology with awareness. By substituting important offline behaviors for screen time, 
+            we may maintain our mental clarity, productivity, and attention. The goal of screen time management is to use it purposefully 
+            and sensibly, not to completely cut it off.</p>
+            <div class="quote">"Don't just focus on the screen, focus on life too."</div>
+    </div>
+    <div class="tip">
+        <h2>9. Journal Your Thoughts</h2>
+        <p>The writing down your ideas is a strong habit that can lead to personal growth, mental clarity, and emotional relief. 
+            Writing down your thoughts, feelings, and experiences helps you decompress and clear your head. You can better understand 
+            your behavior, analyze emotions, and monitor your personal development over time by keeping a journal. Being honest with 
+            yourself in a private and nonjudgmental manner is made possible by journaling, whether it is through gratitude notes, 
+            daily observations, or just putting your ideas on paper. Additionally, it enhances creativity, decision-making, and 
+            self-awareness. Increased focus, mental tranquility, and a closer bond with oneself can result from just a few minutes 
+            per day.</p>
+            <div class="quote">"Journaling is similar to simultaneously listening and whispering to oneself."</div>
+    </div>
+    <div class="tip">
+        <h2>10. Practice Gratitude</h2>
+        <p>The feeling of gratitude is a simple but successful habit that can change the way you view the world. You can change 
+            your perspective from one of missing things to one of significant things by consistently concentrating on your blessings, 
+            no matter how minor. Having gratitude boosts emotional resilience, lowers stress, and promotes mental health. It improves 
+            relationships, increases positivism in your life, and teaches you to appreciate the little things in life. You can begin 
+            by listing three things for which you are thankful every day or just taking a moment to consider what went well. This 
+            practice gradually rewires your brain to focus more on the positive aspects of life, which makes it feel more abundant, 
+            serene, and satisfying.</p>
+            <div class="quote">"The lack of gratitude makes what we have sufficient."</div>
+    </div>
+    <div class="main">
+    <h2>Main Point</h2>
+    <p>"Self-improvement takes time and effort. It's a journey. Begin modestly. Be dependable and acknowledge your progress"</p>
+    <div class="quote">"Success doesn't happen right away. But today, it begins with a small habit."</div>
+  </div>
+  <div class="actions">
+    <button class="btn like-btn" onclick="likePost()">❤️ Like (<span id="likeCount">0</span>)</button>
+   <!-- Share Button -->
+<div style="position: relative; display: inline-block;">
+  <button class="btn share-btn" onclick="toggleShare()">🔗 Share</button>
+
+  <!-- Popup Social Icons -->
+  <div class="share-popup" id="shareOptions">
+    <!-- WhatsApp -->
+    <a class="whatsapp" href="https://wa.me/?text=Check%20out%20this%20blog:%20https://sumittatawat.github.io/self-improvement-blog/self-improvement.html" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#25D366" viewBox="0 0 24 24">
+        <path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.62-6.003C.122 5.3 5.44 0 12.057 0c3.178 0 6.167 1.24 8.413 3.488A11.822 11.822 0 0124 11.89c-.003 6.617-5.323 11.93-11.94 11.93a11.95 11.95 0 01-6.065-1.64L.057 24zM6.6 20.13c1.676.995 3.276 1.591 5.448 1.593 5.448 0 9.886-4.434 9.89-9.877.002-5.463-4.415-9.89-9.881-9.894-5.45 0-9.884 4.43-9.886 9.872a9.86 9.86 0 001.646 5.393l-.999 3.648 3.782-1.135zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.03-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.173.198-.297.298-.496.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.209-.242-.579-.487-.5-.669-.51-.173-.007-.372-.009-.571-.009s-.521.074-.794.372c-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/>
+      </svg>
+    </a>
+  
+    <!-- Facebook -->
+    <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://sumittatawat.github.io/self-improvement-blog/self-improvement.html" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#1877F2" viewBox="0 0 24 24">
+        <path d="M22.675 0h-21.35C.597 0 0 .597 0 1.333v21.333C0 23.403.597 24 1.325 24h11.495v-9.294H9.692V11.31h3.128V8.413c0-3.1 1.893-4.788 4.657-4.788 1.325 0 2.466.099 2.797.143v3.24l-1.92.001c-1.507 0-1.797.716-1.797 1.764v2.314h3.594l-.468 3.397h-3.126V24h6.128c.728 0 1.325-.597 1.325-1.334V1.333C24 .597 23.403 0 22.675 0z"/>
+      </svg>
+    </a>
+  
+    <!-- Twitter -->
+    <a class="twitter" href="https://twitter.com/intent/tweet?url=https://sumittatawat.github.io/self-improvement-blog/self-improvement.html&text=Check%20this%20out!" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#1DA1F2" viewBox="0 0 24 24">
+        <path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724c-.951.564-2.005.974-3.127 1.195a4.916 4.916 0 00-8.384 4.482c-4.084-.205-7.702-2.162-10.126-5.144a4.822 4.822 0 00-.664 2.475c0 1.708.87 3.213 2.188 4.096a4.904 4.904 0 01-2.229-.616v.061c0 2.385 1.693 4.374 3.946 4.827a4.935 4.935 0 01-2.224.084c.627 1.956 2.444 3.379 4.6 3.421A9.867 9.867 0 010 19.54 13.94 13.94 0 007.548 22c9.142 0 14.307-7.721 13.995-14.646A9.936 9.936 0 0024 4.557z"/>
+      </svg>
+    </a>
+  
+    <!-- LinkedIn -->
+    <a class="linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=https://sumittatawat.github.io/self-improvement-blog/self-improvement.html" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#0077B5" viewBox="0 0 24 24">
+        <path d="M22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.729C24 .774 23.2 0 22.225 0zM7.08 20.452H3.56V9h3.52v11.452zM5.32 7.433c-1.127 0-2.04-.922-2.04-2.056 0-1.134.913-2.056 2.04-2.056 1.128 0 2.041.922 2.041 2.056 0 1.134-.913 2.056-2.041 2.056zM20.452 20.452h-3.52v-5.605c0-1.337-.026-3.059-1.865-3.059-1.865 0-2.151 1.454-2.151 2.958v5.706h-3.52V9h3.379v1.561h.049c.471-.893 1.623-1.836 3.34-1.836 3.573 0 4.229 2.352 4.229 5.411v6.316z"/>
+      </svg>
+    </a>
+  </div>
+</div>
+</div>
+<!-- <div class="comment-section">
+  <h3>💬 Comments</h3>
+
+  <!-- Input Box -->
+  <!-- <textarea id="commentInput" placeholder="Write your comment..." rows="4"></textarea>
+  <button class="btn comment-btn" onclick="postComment()">Post Comment</button> -->
+
+  <!-- Comments List -->
+  <!-- <div id="commentList"></div> -->
+<!-- </div> --> 
+
+<footer>
+    <p>&copy; 2025 Self Improvement Blog by Sumit Tatawat. All Rights Reserved.</p>
+  
+    <nav style="margin-top: 10px;">
+      <a href="privacy-policy.html">Privacy Policy</a> |
+      <a href="terms-conditions.html">Terms & Conditions</a> |
+      <a href="disclaimer.html">Disclaimer</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+  
+  </footer>
+<script src="main.js" defer></script>
+
+</body>
+</html>
