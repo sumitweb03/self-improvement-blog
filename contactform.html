@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7ff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: white;
+      width: 90%;
+      max-width: 450px;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      border-top: 6px solid #4b7bec;
+      animation: fadeIn 0.6s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      text-align: center;
+      color: #4b7bec;
+      margin-bottom: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      color: #333;
+      display: block;
+      margin-top: 12px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+
+    textarea {
+      height: 120px;
+      resize: none;
+    }
+
+    button {
+      width: 100%;
+      background: #4b7bec;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 17px;
+      margin-top: 15px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #3867d6;
+    }
+
+    .success {
+      text-align: center;
+      background: #dfffdc;
+      color: #2ecc71;
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 15px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Contact Us</h2>
+
+    <form id="contactForm">
+      <label>Your Name</label>
+      <input type="text" placeholder="Enter your name" required />
+
+      <label>Email Address</label>
+      <input type="email" placeholder="Enter your email" required />
+
+      <label>Your Message</label>
+      <textarea placeholder="Write your message..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="success" id="successMsg">Thank you! Your message has been sent.</div>
+  </div>
+
+  <script>
+    const form = document.getElementById("contactForm");
+    const success = document.getElementById("successMsg");
+
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      success.style.display = "block";
+      form.reset();
+    });
+  </script>
+</body>
+</html>
